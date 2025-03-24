@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Debug - 查看主题目录
+        run: ls -la stellar/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
