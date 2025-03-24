@@ -34,11 +34,15 @@ jobs:
         run: |
           npm install -g hexo-cli
           npm install
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+      
+      - name: Generate Static Files
+        run: hexo clean && hexo generate
+
+      # - name: Build with Jekyll
+      #   uses: actions/jekyll-build-pages@v1
+      #   with:
+      #     source: ./
+      #     destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
