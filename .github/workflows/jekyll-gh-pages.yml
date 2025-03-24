@@ -36,13 +36,13 @@ jobs:
           npm install
 
       - name: Generate Static Files
-        run: hexo clean && hexo generate
+        run: hexo clean && hexo generate && hexo d
 
-      - name: Deploy to gh-page
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./public
-          publish_branch: gh-page
+      # - name: Deploy to gh-page
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     publish_dir: ./public
+      #     publish_branch: gh-page
       # - name: Build with Jekyll
       #   uses: actions/jekyll-build-pages@v1
       #   with:
