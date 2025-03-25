@@ -90,7 +90,7 @@ include:
 exclude:
 ignore:
 
-theme: stellars
+theme: stellar
 # remote_theme: ./themes/stellar
 # Extensions
 ## Plugins: https://hexo.io/plugins/
