@@ -1,7 +1,7 @@
 ---
 title: github使用
-tags: []
-categories: []
+tags: ['github']
+categories: ['工具教程']
 poster:
   topic: 标题上方的小字
   headline: 大标题

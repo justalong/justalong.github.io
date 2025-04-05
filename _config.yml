@@ -103,3 +103,6 @@ deploy:
   type: git
   repo: git@github.com:justalong/justalong.github.io.git # Github pages地址
   branch: gh-page
+
+sitemap:
+    path: sitemap.xml
