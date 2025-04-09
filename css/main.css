@@ -4869,7 +4869,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   margin: 0 var(--gap-margin) 0;
 }
 .nav-qr .qrcode {
-  width: 48%;
+  width: 33%;
   display: block;
   margin: 0 0 12px;
 }
