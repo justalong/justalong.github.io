@@ -21,13 +21,34 @@ indexing:
 breadcrumb:
 ---
 
-### 准备工作
+### 全流程说明
+
+- 学会markdown语法写作
+- 安装Node.js
+- 安装Git
+- 安装Hexo
+- 本地启动服务预览
+- 尝试本地编写文章
+- GitHub创建个人仓库
+- 推送网站
+
+
+- 更换主题
+- 发布文章
+- 寻找图床
+- 个性化设置
+- 其他
+- 附录
+
+
+### 一、准备工作
 
 - 下载安装 node.js，推荐稳定18.x.x以上版本
 - 下载安装 git 软件
 - 去github官网注册github账号
+- 会使用markdown语法进行写作
 
-### 一、本地搭建 hexo 静态博客，提升成就感
+### 二、本地启动 hexo，提升成就感和继续下去的动力
 
 #### 第一步：验证node安装成功与否
 
@@ -49,7 +70,7 @@ v20.11.0
 
 #### 第三步：初始化 hexo 框架
 
-- 如果上面Node.js正常安装，npm就自然有了
+- 如果上面Node.js正常安装，npm就自然有了，还是打开cmd终端输入下面代码
   
 ```
 // 全局安装 hexo-cli 包工具
@@ -58,11 +79,11 @@ npm install -g hexo-cli
 
 #### 第四步：初始化基本信息
 
-- 新建一个文件夹，如 MyBlog ，进入该文件夹内，当前目录打开cmd输入
-`hexo init`**（可以在文件夹目录cmd）**
+- 新建一个文件夹，进入该文件夹内，当前目录打开cmd输入
+`hexo init MyBlog<文件夹名称>**`**（可以在文件夹目录cmd）**
 
 ```
-// 初始化结束，应该有个类似的package.json文件
+// 初始化结束，进入到MyBlog应该有个类似的package.json文件
 {
   "name": "qiyue",
   "version": "1.0.0",
@@ -94,7 +115,7 @@ npm install -g hexo-cli
 
 ```
 
-- 生成完 hexo 模板，执行 `npm install`安装所有依赖包（核心记住package.json文件在哪里，就在那个目录执行`npm install`）
+- 生成完 hexo 模板，执行 `npm install`安装所有依赖包（核心记住package.json文件在哪里，就在那个目录执行`npm install`），如果已经有`node_modules`文件夹了，可以不用安装
   
 #### 第五步：本地启动，验证效果
 
@@ -102,6 +123,8 @@ npm install -g hexo-cli
 
 ```
 // npm run 行为，默认执行package.json的script下的命令
+// package.json 在那个文件，就在那个文件执行命令
+
 npm run server
 // 或者
 hexo server
@@ -109,9 +132,16 @@ hexo server
 
 这时候打开浏览器，输入 localhost:4000 就可以看到博客目前的样子了
 
+补充图片
+
 #### 第六步：掌握基本命令，编辑文章
 
+https://hexo.io/zh-cn/docs/writing
+
 ```
+// 会在 source/_posts下生成markdown格式文章
+hexo new post <文章名称>，
+
 // 清理构建产出，每次构建会生成public 文件，这个就是完好的浏览器页面
 hexo clean
 
@@ -124,4 +154,5 @@ hexo deploy 或者 hexo d
 // 本地启动预览服务，预览部署后效果
 hexo server
 ```
-### 详细设计
+### 三、详细设计
+
