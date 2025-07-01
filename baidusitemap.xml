@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://justalong.github.io/2025/03/24/windows/</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://justalong.github.io/2025/07/01/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://justalong.github.io/2025/07/01/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <url>
     <loc>https://justalong.github.io/2025/07/01/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
@@ -115,9 +127,5 @@
   <url>
     <loc>https://justalong.github.io/2025/04/05/%E5%85%8D%E8%B4%B9pdf%E7%BC%96%E8%BE%91%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2025-04-05</lastmod>
-  </url>
-  <url>
-    <loc>https://justalong.github.io/2025/03/24/windows/</loc>
-    <lastmod>2025-03-24</lastmod>
   </url>
 </urlset> 
