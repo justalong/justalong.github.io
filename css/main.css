@@ -4873,6 +4873,9 @@ details.toc[open] >div.body section .header+.doc_tree {
   display: block;
   margin: 0 0 12px;
 }
+.nav-qr .qrcode-item {
+  width: 50%;
+}
 .search-wrapper {
   width: 100%;
 }
@@ -6467,7 +6470,6 @@ body>.sitebg .siteblur:hover {
   overflow: hidden;
 }
 .l_body[text-indent] .md-text.content p:not([class]) {
-  text-indent: calc(var(--fsp) * 2);
   text-align: justify;
 }
 .l_body[text-indent] .md-text.content p:not([class]) a {
