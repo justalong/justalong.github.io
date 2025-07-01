@@ -4865,16 +4865,23 @@ details.toc[open] >div.body section .header+.doc_tree {
 .nav-qr {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 var(--gap-margin) 0;
 }
 .nav-qr .qrcode {
-  width: 33%;
+  width: 100%;
   display: block;
   margin: 0 0 12px;
 }
 .nav-qr .qrcode-item {
-  width: 50%;
+  width: 49%;
+}
+.nav-qr .qrcode-item .qrcode-text {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
 }
 .search-wrapper {
   width: 100%;
@@ -5788,7 +5795,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   padding-bottom: 32px;
 }
 .l_left .widgets .widget-wrapper:first-child {
-  margin-top: 32px;
+  margin-top: 0px;
 }
 .l_right .widgets:empty {
   display: none;
