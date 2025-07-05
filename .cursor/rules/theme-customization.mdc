@@ -1,0 +1,64 @@
+---
+alwaysApply: true
+---
+# Stellar主题定制指南
+
+## 主题配置文件
+主要配置文件是 [_config.stellar.yml](mdc:_config.stellar.yml)，包含：
+
+### 菜单栏配置
+```yaml
+menubar:
+  columns: 4  # 一行显示多少个菜单项
+  items:
+    - id: nav
+      theme: '#ccc'
+      title: 资源
+      url: https://github.com/justalong/navjson
+```
+
+### 文章设置
+```yaml
+article:
+  type: story  # tech: 技术类文章, story: 图文类文章
+  auto_cover: false  # 自动搜索封面图片
+  cover_ratio: 2.4  # 封面图宽高比
+  auto_excerpt: 128  # 自动摘要长度
+```
+
+### 评论系统
+当前使用Giscus评论系统：
+```yaml
+comments:
+  service: giscus
+  giscus:
+    data-repo: "justalong/comments"
+    data-category: "General"
+    data-theme: preferred_color_scheme
+```
+
+## 主题文件结构
+- `themes/stellar/layout/` - 页面布局模板
+- `themes/stellar/source/css/` - 样式文件
+- `themes/stellar/source/js/` - JavaScript文件
+- `themes/stellar/scripts/` - 主题脚本和插件
+
+## 自定义样式
+- 主要样式文件：`themes/stellar/source/css/main.styl`
+- 自定义样式：`themes/stellar/source/css/_custom.styl`
+- 组件样式：`themes/stellar/source/css/_components/`
+
+## 标签插件
+Stellar主题支持多种标签插件：
+- `{% image %}` - 图片标签
+- `{% link %}` - 链接标签
+- `{% button %}` - 按钮标签
+- `{% tabs %}` - 标签页
+- `{% timeline %}` - 时间线
+
+## 页面模板
+- `themes/stellar/layout/index.ejs` - 首页模板
+- `themes/stellar/layout/post.ejs` - 文章页面模板
+- `themes/stellar/layout/page.ejs` - 独立页面模板
+- `themes/stellar/layout/archive.ejs` - 归档页面模板
+

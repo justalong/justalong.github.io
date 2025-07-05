@@ -1,0 +1,79 @@
+---
+alwaysApply: true
+---
+# SEO和网站优化
+
+## 站点SEO配置
+在 [_config.yml](mdc:_config.yml) 中已配置：
+- 站点标题：七月
+- 关键词：开源软件，免费软件，AI技术，音乐资源，电影资源等
+- 描述：开源软件推荐，AI技术分享，网站和资源分享，AIGC技术教程，AI Agent教程
+- 语言：zh-CN
+
+## URL优化
+- 永久链接格式：`:year/:month/:day/:title/`
+- 启用美化URL：`trailing_index: true`
+- 站点URL：`https://justalong.github.io`
+
+## 文章SEO
+### Front-matter优化
+每篇文章应包含：
+```yaml
+---
+title: 文章标题
+date: YYYY-MM-DD HH:mm:ss
+categories: [分类]
+tags: [标签1, 标签2]
+keywords: 关键词1, 关键词2
+description: 文章描述
+---
+```
+
+### 内容优化
+- 使用清晰的标题层级（H1, H2, H3）
+- 添加适当的内部链接
+- 优化图片alt属性
+- 使用描述性的文件名
+
+## 技术优化
+### 已安装的插件
+- `hexo-generator-sitemap` - 生成sitemap.xml
+- `hexo-generator-baidu-sitemap` - 生成百度sitemap
+- `hexo-related-popular-posts` - 相关文章推荐
+
+### 性能优化
+- 图片懒加载：Stellar主题内置
+- 代码高亮：使用highlight.js
+- 响应式设计：主题支持移动端
+
+## 社交媒体
+### 分享配置
+在 [_config.stellar.yml](mdc:_config.stellar.yml) 中配置：
+```yaml
+share: [wechat, weibo, email, link]
+```
+
+### Open Graph
+- 自动生成Open Graph标签
+- 支持微信、微博等社交媒体分享
+
+## 搜索引擎
+### 百度统计
+- 已配置百度统计代码
+- 支持百度站长工具
+
+### Google Analytics
+- 可配置Google Analytics
+- 支持Google Search Console
+
+## 内容策略
+### 关键词布局
+- 标题包含主要关键词
+- 正文自然分布关键词
+- 避免关键词堆砌
+
+### 内容更新
+- 定期更新文章内容
+- 保持内容的时效性
+- 添加新的相关资源链接
+

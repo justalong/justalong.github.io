@@ -1,0 +1,38 @@
+---
+alwaysApply: true
+---
+# Hexo博客项目结构指南
+
+这是一个基于Hexo的静态博客网站，使用Stellar主题。主要配置文件包括：
+
+## 核心配置文件
+- [config.yml](mdc:_config.yml) - Hexo主配置文件，包含站点基本信息、URL设置、部署配置等
+- [_config.stellar.yml](mdc:_config.stellar.yml) - Stellar主题配置文件，包含菜单栏、文章设置、评论系统等
+- [package.json](mdc:package.json) - 项目依赖和脚本配置
+
+## 内容管理
+- `source/_posts/` - 存放所有博客文章，使用Markdown格式
+- `source/_data/` - 存放数据文件，如主题分类等
+- `scaffolds/` - 文章模板文件
+
+## 主题文件
+- `themes/stellar/` - Stellar主题文件，包含布局、样式、脚本等
+- `themes/stellar/layout/` - 页面布局模板
+- `themes/stellar/source/css/` - 样式文件
+- `themes/stellar/source/js/` - JavaScript文件
+
+## 构建和部署
+- `public/` - 构建生成的静态文件（自动生成）
+- `.deploy_git/` - 部署相关的Git仓库
+
+## 常用命令
+- `npm run server` - 启动本地开发服务器
+- `npm run build` - 构建静态文件
+- `npm run deploy` - 部署到GitHub Pages
+- `npm run publish` - 构建并部署
+
+## 文章写作
+- 在 `source/_posts/` 目录下创建 `.md` 文件
+- 使用Front-matter设置文章元数据
+- 支持Markdown语法和Stellar主题的标签插件
+

@@ -1,0 +1,221 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 页面响应适配实现规则
+
+## 设备断点定义
+在 [themes/stellar/source/css/_defines/const.styl](mdc:themes/stellar/source/css/_defines/const.styl) 中定义了标准断点：
+
+```stylus
+$device-mobile-375 = 375px    // 小屏手机
+$device-mobile-425 = 425px    // 中等手机
+$device-mobile = 500px        // 大屏手机
+$device-mobile-max = 667px    // 手机最大宽度
+$device-tablet = 768px        // 平板
+$device-laptop = 1180px       // 笔记本
+$device-desktop = 1440px      // 桌面
+$device-2k = 2048px          // 2K显示器
+$device-4k = 2560px          // 4K显示器
+```
+
+## 响应式布局实现
+
+### 主布局结构
+在 [themes/stellar/source/css/_components/layout.styl](mdc:themes/stellar/source/css/_components/layout.styl) 中：
+
+```stylus
+.l_body
+  display: grid
+  grid-template-columns: 1fr minmax(200px,var(--width-main)) 1fr
+  grid-gap: var(--gap-margin)
+```
+
+### 平板适配 (≤1180px)
+```stylus
+@media screen and (max-width: $device-laptop)
+  .l_body .l_right
+    position: fixed
+    transform: translateX(320px)
+    transition: transform .38s ease-out
+```
+
+### 手机适配 (≤667px)
+```stylus
+@media screen and (max-width: $device-mobile-max)
+  .l_body
+    display: block
+    .l_left
+      position: fixed
+      transform: translateX(-320px)
+```
+
+## 动态CSS变量
+
+### 主内容宽度适配
+在 [themes/stellar/source/css/_custom.styl](mdc:themes/stellar/source/css/_custom.styl) 中：
+
+```stylus
+:root
+  --width-main: 720px
+  // 2K显示器
+  @media screen and (min-width: $device-2k)
+    --width-main: 780px
+  // 4K显示器
+  @media screen and (min-width: $device-4k)
+    --width-main: 860px
+```
+
+### 侧边栏宽度适配
+```stylus
+:root
+  --side-content-width: 224px
+  // iPad竖屏
+  @media screen and (max-width: $device-tablet)
+    --side-content-width: 188px
+  // 手机
+  @media screen and (max-width: $device-mobile-max)
+    --side-content-width: 224px
+```
+
+## 设备专用样式类
+
+### 移动端专用
+在 [themes/stellar/source/css/_common/device.styl](mdc:themes/stellar/source/css/_common/device.styl) 中：
+
+```stylus
+.mobile-only
+  display: none
+  @media screen and (max-width: $device-mobile-max)
+    display: block !important
+
+.mobile-hidden
+  @media screen and (max-width: $device-mobile-max)
+    display: none !important
+```
+
+### 浮动面板适配
+```stylus
+.float-panel
+  position: sticky
+  @media screen and (min-width: $device-mobile-max)
+    margin-right: 2rem
+```
+
+## 组件响应式实现
+
+### 导航栏适配
+- 桌面端：完整菜单显示
+- 平板端：菜单收缩
+- 手机端：汉堡菜单
+
+### 文章卡片适配
+- 桌面端：多列布局
+- 平板端：双列布局
+- 手机端：单列布局
+
+### 侧边栏适配
+- 桌面端：固定显示
+- 平板端：可滑动显示
+- 手机端：抽屉式显示
+
+## 图片响应式处理
+
+### 自适应图片
+```stylus
+img
+  max-width: 100%
+  height: auto
+```
+
+### 背景图片适配
+```stylus
+.cover
+  background-size: cover
+  background-position: center
+  @media screen and (max-width: $device-mobile)
+    background-size: contain
+```
+
+## 字体大小适配
+
+### 动态字体大小
+```stylus
+:root
+  --fsp: $fs-body
+  --fsh2: 'calc(%s + 11px)' % var(--fsp)
+  --fsh3: 'calc(%s + 7px)' % var(--fsp)
+```
+
+### 移动端字体优化
+```stylus
+@media screen and (max-width: $device-mobile)
+  body
+    font-size: 14px
+  h1
+    font-size: 1.5rem
+```
+
+## 间距适配
+
+### 动态间距
+```stylus
+:root
+  --gap-margin: 16px
+  --gap-padding: 16px
+  --gap-max: calc(var(--gap-margin) + var(--gap-padding))
+```
+
+### 移动端间距优化
+```stylus
+@media screen and (max-width: $device-mobile-max)
+  .l_body
+    padding: 0
+  .card
+    margin: 8px
+```
+
+## 交互适配
+
+### 触摸优化
+- 按钮最小触摸区域：44px × 44px
+- 链接间距：避免误触
+- 滑动手势：支持侧边栏滑动
+
+### 悬停效果
+```stylus
+@media (hover: hover)
+  .button:hover
+    transform: translateY(-2px)
+```
+
+## 性能优化
+
+### 媒体查询优化
+- 使用 `screen` 媒体类型
+- 避免嵌套媒体查询
+- 优先使用CSS变量
+
+### 动画适配
+```stylus
+@media (prefers-reduced-motion: reduce)
+  *
+    animation-duration: 0.01ms !important
+    transition-duration: 0.01ms !important
+```
+
+## 测试和调试
+
+### 断点测试
+- 375px: iPhone SE
+- 667px: iPhone 6/7/8
+- 768px: iPad
+- 1180px: 笔记本
+- 1440px: 桌面显示器
+
+### 调试工具
+- 浏览器开发者工具
+- 设备模拟器
+- 真实设备测试
+

@@ -1,0 +1,64 @@
+---
+alwaysApply: true
+---
+# 开发工作流程
+
+## 本地开发
+1. **启动开发服务器**
+   ```bash
+   npm run server
+   ```
+   这会执行：`hexo clean && hexo g && hexo s`
+
+2. **访问本地站点**
+   - 默认地址：`http://localhost:4000`
+   - 支持热重载，修改文件后自动刷新
+
+## 文章发布流程
+1. **创建新文章**
+   - 在 `source/_posts/` 目录下创建 `.md` 文件
+   - 使用中文文件名
+   - 添加正确的Front-matter
+
+2. **编写内容**
+   - 使用Markdown语法
+   - 利用Stellar主题的标签插件
+   - 添加适当的分类和标签
+
+3. **预览和测试**
+   - 本地预览文章效果
+   - 检查链接和图片是否正确
+   - 测试响应式布局
+
+## 构建和部署
+1. **构建静态文件**
+   ```bash
+   npm run build
+   ```
+   生成的文件在 `public/` 目录
+
+2. **部署到GitHub Pages**
+   ```bash
+   npm run deploy
+   ```
+   或使用一键发布：
+   ```bash
+   npm run publish
+   ```
+
+## 配置管理
+- 修改站点配置：编辑 [_config.yml](mdc:_config.yml)
+- 修改主题配置：编辑 [_config.stellar.yml](mdc:_config.stellar.yml)
+- 添加依赖：编辑 [package.json](mdc:package.json)
+
+## 版本控制
+- 主要文件都应该提交到Git
+- `node_modules/` 和 `public/` 目录已加入 `.gitignore`
+- 部署相关的Git仓库在 `.deploy_git/` 目录
+
+## 故障排除
+- 清理缓存：`npm run clean`
+- 重新安装依赖：`npm install`
+- 检查配置文件语法是否正确
+- 查看Hexo日志获取错误信息
+

@@ -1,5 +1,5 @@
 menubar:
-  columns: 2 # 一行多少个
+  columns: 4 # 一行多少个
   items: # 可按照自己需求增加，符合以下格式即可
     # id: 页面中高亮的 menu_id 
     # theme: 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
@@ -8,7 +8,7 @@ menubar:
     # url: 点击跳转到哪，支持相对路径和绝对路径
     - id: nav
       theme: '#ccc' # 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
-      title: 资源导航 # 标题
+      title: 资源 # 标题
       url: https://github.com/justalong/navjson
     - id: zhihu
       theme: '#ccc'
@@ -16,8 +16,20 @@ menubar:
       url: https://www.zhihu.com/people/liu-yong-shun-34/posts
     - id: ainav
       theme: '#ccc'
-      title: AI导航
+      title: AI
       url: https://justalong.github.io/2025/06/05/ai%E5%AF%BC%E8%88%AA/
+    - id: juejin
+      theme: '#ccc'
+      title: 掘金
+      url: https://juejin.cn/user/2242659450881991/posts
+    - id: csdn
+      theme: '#ccc'
+      title: CSDN
+      url: https://blog.csdn.net/liuyongshun2?spm=1011.2648.3001.5343
+    - id: github
+      theme: '#ccc'
+      title: github
+      url: https://github.com/justalong/navjson
 
 article:
   # 文章类型，决定布局风格，可以在 front-matter/topic/wiki 中覆盖此参数

@@ -106,3 +106,110 @@ $boxshadow-card-float = 0 12px 16px -4px rgba(0, 0, 0, 0.2)
 $boxshadow-button = 0 0 2px 0px rgba(0, 0, 0, 0.04), 0 0 8px 0px rgba(0, 0, 0, 0.04)
 $boxshadow-block = 0 1px 4px 0px rgba(0, 0, 0, 0.02), 0 2px 8px 0px rgba(0, 0, 0, 0.02)
 $boxshadow-toast = 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 12px 16px -4px rgba(0, 0, 0, 0.2)
+
+// 全局弹窗 Global Popup
+#global-popup-mask
+  position: fixed
+  left: 0
+  top: 0
+  width: 100vw
+  height: 100vh
+  background: rgba(0,0,0,0.55)
+  z-index: 9999
+  display: flex
+  align-items: center
+  justify-content: center
+
+#global-popup
+  background: #fff
+  border-radius: 16px
+  box-shadow: $boxshadow-card-float
+  max-width: 480px
+  width: 90vw
+  padding: 2rem 1.5rem 1.5rem 1.5rem
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  font-family: $ff-body
+
+  @media screen and (max-width: $device-mobile-max)
+    max-width: 96vw
+    padding: 1.2rem 0.5rem 1rem 0.5rem
+
+.popup-header
+  color: $color-theme
+  font-weight: bold
+  font-size: 0.8rem
+  margin-bottom: 1.2rem
+  text-align: center
+  line-height: 2
+
+.popup-qrcodes
+  display: flex
+  flex-direction: row
+  justify-content: center
+  gap: 1.5rem
+  margin-bottom: 1.2rem
+  width: 100%
+
+  @media screen and (max-width: $device-mobile-max)
+    gap: 1rem
+    align-items: center
+
+.popup-qrcode-item
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 120px
+  @media screen and (max-width: $device-mobile-max)
+    width: 80vw
+    max-width: 220px
+
+  img
+    width: 100%
+    max-width: 120px
+    height: auto
+    border-radius: 8px
+    box-shadow: $boxshadow-card
+    margin-bottom: 0.5rem
+    @media screen and (max-width: $device-mobile-max)
+      max-width: 180px
+
+  .popup-qrcode-desc
+    font-size: 0.8rem
+    color: $color-text
+    text-align: center
+    margin-bottom: 0.2rem
+
+.popup-footer
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 0.5rem
+
+.popup-close
+  background: $color-theme
+  color: #fff
+  border: none
+  border-radius: $border-button
+  padding: 0.3rem 1.5rem
+  font-size: 0.8rem
+  cursor: pointer
+  box-shadow: $boxshadow-button
+  transition: background 0.2s
+  outline: none
+  &:hover, &:focus
+    background: $color-accent
+
+// 弹窗动画
+#global-popup
+  animation: popup-fadein 0.38s cubic-bezier(.4,0,.2,1)
+@keyframes popup-fadein
+  from
+    opacity: 0
+    transform: scale(0.95)
+  to
+    opacity: 1
+    transform: scale(1)
