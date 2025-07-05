@@ -208,3 +208,48 @@ init.toc()
 init.sidebar()
 init.relativeDate(document.querySelectorAll('#post-meta time'))
 init.registerTabsTag()
+
+// === Global Popup 弹窗逻辑 ===
+function dialogbase() {
+  function showPopupIfNeeded(force) {
+    var mask = document.getElementById('global-popup-mask');
+    var popup = document.getElementById('global-popup');
+    var closeBtn = mask ? mask.querySelector('.popup-close') : null;
+    if (!mask || !popup || !closeBtn) return;
+
+    var storageKey = 'global_popup_last_shown';
+    var today = new Date();
+    var todayStr = today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+    var last = localStorage.getItem(storageKey);
+    var shouldShow = true;
+    if (last && !force) {
+      var lastDate = new Date(last);
+      var diff = today.getTime() - lastDate.getTime();
+      var days = diff / (1000 * 60 * 60 * 24);
+      shouldShow = days >= 7;
+    }
+    if (force || shouldShow) {
+      mask.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePopup() {
+      mask.style.display = 'none';
+      document.body.style.overflow = '';
+      localStorage.setItem(storageKey, todayStr);
+    }
+    closeBtn.onclick = closePopup;
+    mask.addEventListener('click', function(e) {
+      if (e.target === mask) {
+        // 不关闭
+      }
+    });
+  }
+  // 延迟确保HTML已渲染
+  window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() { showPopupIfNeeded(false); }, 300);
+  });
+  // 提供全局方法便于调试
+  window.showGlobalPopup = function() { showPopupIfNeeded(true); };
+}
+dialogbase();
