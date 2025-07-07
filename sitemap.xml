@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://justalong.github.io/2025/07/07/Cursor%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%8C%E6%B7%B1%E5%BA%A6%E4%BD%BF%E7%94%A8Cursor/</loc>
+    
+    <lastmod>2025-07-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/2025/07/07/%E8%AF%84%E4%BC%B0%E5%88%86%E6%9E%90AI%E5%B7%A5%E5%85%B7%E5%AF%B9%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81%E6%83%85%E5%86%B5/</loc>
+    
+    <lastmod>2025-07-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/2025/07/07/aicoding/</loc>
+    
+    <lastmod>2025-07-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://justalong.github.io/2025/07/02/ainav/</loc>
     
     <lastmod>2025-07-05</lastmod>
@@ -319,246 +346,274 @@
 
   <url>
     <loc>https://justalong.github.io/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://justalong.github.io/tags/%E7%94%B5%E5%BD%B1/</loc>
-    <lastmod>2025-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://justalong.github.io/tags/AI%E7%94%9F%E6%88%90%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/AI%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/%E7%94%B5%E5%BD%B1/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/AI%E5%90%8D%E8%AF%8D/</loc>
-    <lastmod>2025-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://justalong.github.io/tags/AI%E6%A1%88%E4%BE%8B/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/AI%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://justalong.github.io/tags/Claude%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <loc>https://justalong.github.io/tags/AI-coding/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/AI%E6%A1%88%E4%BE%8B/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/github/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://justalong.github.io/tags/%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <loc>https://justalong.github.io/tags/Claude%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/hexo/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/%E5%AF%BC%E8%88%AA/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/pdf/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/ppt/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E7%94%B5%E5%AD%90%E4%B9%A6/</loc>
-    <lastmod>2025-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://justalong.github.io/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%85%8D%E8%B4%B9%E5%90%AC%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%8E%BB%E6%B0%B4%E5%8D%B0/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%BD%95%E5%B1%8F/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%8A%A4%E7%9C%BC%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%95%B0%E6%8D%AE%E6%89%BE%E5%9B%9E/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%95%B0%E6%8D%AE%E7%95%99%E7%97%95/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E7%94%B5%E8%84%91%E5%BD%95%E5%B1%8F/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E7%9B%B4%E6%92%AD/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E4%B9%90%E8%B6%A3%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E6%8E%92%E7%89%88%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/tags/%E5%A4%A9%E6%96%87%E5%9C%B0%E7%90%86/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/Cursor%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/tags/Cursor%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -566,85 +621,99 @@
 
   
   <url>
-    <loc>https://justalong.github.io/categories/%E7%94%B5%E5%BD%B1/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <loc>https://justalong.github.io/categories/AI/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://justalong.github.io/categories/AI/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <loc>https://justalong.github.io/categories/%E7%94%B5%E5%BD%B1/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/categories/AI%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/AI%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E8%87%AA%E5%AA%92%E4%BD%93/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://justalong.github.io/categories/%E7%9B%B4%E6%92%AD%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://justalong.github.io/categories/Cursor/</loc>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
