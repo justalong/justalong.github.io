@@ -1,5 +1,5 @@
-name: AI导航 # 在面包屑导航上会显示较短的名字
-title: 各类AI资源导航网站
-description: 覆盖市面几乎全部热门AI产品，同时展示域名月活，让你根据用户量选择最优产品
+name: 电脑桌面 # 在面包屑导航上会显示较短的名字
+title: 电脑桌面整理和美化
+description: 关于windows桌面整理，如何做
 order_by: -date # 
-icon: https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/333.jpeg
+icon: https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/1d0a5f2f2b01898689b1a948f3a742e2.jpg

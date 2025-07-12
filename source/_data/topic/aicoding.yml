@@ -1,0 +1,5 @@
+name: AI编程 # 在面包屑导航上会显示较短的名字
+title: AI编程教程，AI编程技巧
+description: 详细讲解AI编程技术，AI编程技巧，AI编程工具，AI编程资源，Cursor使用，AI提示词技巧
+order_by: -date # 
+icon: https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/cursor/dd.jpeg

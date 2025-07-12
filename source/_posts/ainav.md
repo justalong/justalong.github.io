@@ -1,6 +1,6 @@
 ---
 title: 导航专栏
-topic: navpage
+topic: ainav
 ---
 
 ## AI导航
