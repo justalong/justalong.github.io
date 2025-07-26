@@ -1,0 +1,947 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
+  
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <meta name="google-site-verification" content="dX77Ku8csh3HBP3BqRW-D12OHYjYpdAa7o3uBvs1DcI" />
+  <script>
+    (function(w, d, s, q, i) {
+    w[q] = w[q] || [];
+    var f = d.getElementsByTagName(s)[0],j = d.createElement(s);
+    j.async = true;
+    j.id = 'beacon-aplus';
+    j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
+    f.parentNode.insertBefore(j, f);
+   })(window, document, 'script', 'aplus_queue', '203467608');
+ 
+     //集成应用的appKey
+     aplus_queue.push({
+       action: 'aplus.setMetaInfo',
+       arguments: ['appKey', '67ec8e9665c707471a394fe6']
+     });
+     /************************以下内容为可选配置内容****************************/
+     //sdk提供手动pv发送机制，启用手动pv(即关闭自动pv)，需设置aplus-waiting=MAN;
+     //注意：由于单页面路由改变时不会刷新页面，无法自动发送pv，所以对于单页应用，强烈建议您关闭自动PV, 手动控制PV事件
+    //  aplus_queue.push({
+    //    action: 'aplus.setMetaInfo',
+    //    arguments: ['aplus-waiting', 'MAN']
+    //  });
+     //是否开启调试模式 
+    //  aplus_queue.push({
+    //    action: 'aplus.setMetaInfo',
+    //    arguments: ['DEBUG', true]
+    //  });
+     //是否指定用作计算umid的id类型，默认为cnaid，目前支持:
+     //1. 微信和QQ: openid; 字节和百度 anonymousid; 支付宝 alipay_id
+     //2. 微信、QQ、字节、百度平台的 unionid
+     //3. 业务方自己生成的随机id uuid
+    //   aplus_queue.push({
+    //    action: 'aplus.setMetaInfo',
+    //    arguments: ['aplus-idtype', 'xxxx'] //取值参考见附表1
+    //  });
+    aplus_queue.push({
+    action: 'aplus.sendPV',
+      arguments: [{
+          is_auto: false
+      }, {
+          param2: 'pv'
+      }]
+    });
+     /******************************************************************/
+   </script>
+  
+  <title>MCP工具推荐 - 七月 - AI编程与资源分享</title>
+
+  
+    <meta name="description" content="本文介绍MCP工具推荐相关内容，包括使用方法、技巧和最佳实践。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MCP工具推荐">
+<meta property="og:url" content="https://justalong.github.io/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/index.html">
+<meta property="og:site_name" content="七月 - AI编程与资源分享">
+<meta property="og:description" content="本文介绍MCP工具推荐相关内容，包括使用方法、技巧和最佳实践。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/11b8575513014853814e30a6fc41a5a5.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/1.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/2.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/3.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/4.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/5.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/6.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/7.webp">
+<meta property="article:published_time" content="2025-07-26T00:51:06.000Z">
+<meta property="article:modified_time" content="2025-07-26T02:35:51.432Z">
+<meta property="article:author" content="七月博客">
+<meta property="article:tag" content="AI工具">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="人工智能">
+<meta property="article:tag" content="AI教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/11b8575513014853814e30a6fc41a5a5.webp">
+  
+  
+  
+  <meta name="keywords" content="AI, 人工智能, AI工具, AI教程, AI应用">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.29.1">
+
+  
+    <link rel="shortcut icon" href="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/favicon.png">
+  
+
+  
+
+  
+</head>
+<body>
+
+<div class="l_body s:aa content story" id="start" layout="post" text-indent><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/favicon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">七月 - AI编程与资源分享</div><div class="sub cap">AI编程, 开源软件推荐, AI技术分享, 网站和资源分享</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item" title="资源" target="_blank" rel="noopener" href="https://github.com/justalong/navjson" style="color:#ccc"><span>资源</span></a><a class="nav-item" title="知乎" target="_blank" rel="noopener" href="https://www.zhihu.com/people/liu-yong-shun-34/posts" style="color:#ccc"><span>知乎</span></a><a class="nav-item" title="AI导航" href="https://justalong.github.io/2025/06/05/ai%E5%AF%BC%E8%88%AA/" style="color:#ccc"><span>AI导航</span></a><a class="nav-item" title="掘金" target="_blank" rel="noopener" href="https://juejin.cn/user/2242659450881991/posts" style="color:#ccc"><span>掘金</span></a><a class="nav-item" title="CSDN" target="_blank" rel="noopener" href="https://blog.csdn.net/liuyongshun2?spm=1011.2648.3001.5343" style="color:#ccc"><span>CSDN</span></a><a class="nav-item" title="github" target="_blank" rel="noopener" href="https://github.com/justalong/navjson" style="color:#ccc"><span>github</span></a></nav>
+</div><div class="nav-qr"><div class="qrcode-item"><img class="qrcode lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/qrcode.jpg" /><div title="智多星手册(软件/网站)" class="qrcode-text">智多星手册(软件/网站)</div></div><div class="qrcode-item"><img class="qrcode lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/xiaochengxu.jpg" /><div title="小程序(导航/工具)" class="qrcode-text">小程序(导航/工具)</div></div><div class="qrcode-item"><img class="qrcode lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/aiqrcode.jpg" /><div title="AI文艺复兴(AI知识)" class="qrcode-text">AI文艺复兴(AI知识)</div></div></div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/07/07/aicoding/"><span class="title">AI编程专栏</span></a><a class="item title" href="/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"><span class="title">MCP工具推荐</span></a><a class="item title" href="/2025/07/12/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A1%86%E6%9E%B6/"><span class="title">提示词框架</span></a><a class="item title" href="/2025/07/09/%E7%BC%96%E7%A8%8B%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8A%80%E5%B7%A7/"><span class="title">编程提示词技巧</span></a><a class="item title" href="/2025/07/09/%E4%B8%80%E6%AC%A1%E5%9F%BA%E4%BA%8EAI%E7%9A%84monorepo%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%AE%BE%E8%AE%A1/"><span class="title">一次基于AI的monorepo前端开发设计</span></a><a class="item title" href="/2025/07/07/%E8%AF%84%E4%BC%B0%E5%88%86%E6%9E%90AI%E5%B7%A5%E5%85%B7%E5%AF%B9%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81%E6%83%85%E5%86%B5/"><span class="title">评估分析AI工具对编程语言支持情况</span></a><a class="item title" href="/2025/05/10/%E8%99%9A%E6%8B%9F%E5%A4%A9%E6%96%87%E9%A6%86/"><span class="title">虚拟天文馆</span></a><a class="item title" href="/2025/05/11/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7/"><span class="title">自媒体创作工具</span></a><a class="item title" href="/2025/07/01/%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/"><span class="title">网站导航</span></a><a class="item title" href="/2025/05/23/%E7%9B%B4%E6%92%AD%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/"><span class="title">直播录屏工具</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/AI%E6%8A%80%E6%9C%AF/">AI技术</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/AI%E6%8A%80%E6%9C%AF/AI%E5%B7%A5%E5%85%B7/">AI工具</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-07-26T00:51:06.000Z">2025-07-26</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-07-26T02:35:51.432Z">2025-07-26</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>MCP工具推荐</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h3 id="一、简单介绍-MCP-发展"><a href="#一、简单介绍-MCP-发展" class="headerlink" title="一、简单介绍 MCP 发展"></a>一、简单介绍 MCP 发展</h3><h4 id="1-1-早期问题"><a href="#1-1-早期问题" class="headerlink" title="1.1 早期问题"></a>1.1 早期问题</h4><p>早期，大家对大模型应用，一般是复制或上传内容，或者研发通过API接入Token，<strong>很难与本地或远程工具&#x2F;软件&#x2F;插件&#x2F;数据库等进行串联</strong>，存在较多的局限性。只能进行“纸上谈兵”，缺少现实中实际应用。</p>
+<h4 id="1-2-初次改进-Function-Call"><a href="#1-2-初次改进-Function-Call" class="headerlink" title="1.2 初次改进 - Function Call"></a>1.2 初次改进 - Function Call</h4><p>为了解决上面的问题，OpenAI推出<code>Function Call</code>函数调用，它允许大型语言模型在生成文本的过程中调用外部函数或服务的功能，开启了工具调用的工业化时代。尽管 <code>Function Call</code> 解决了一些问题，但其本身也存在一些问题</p>
+<ul>
+<li><strong>可拓展性差</strong> 没有标准的统一规范，各平台实现方式有差异</li>
+<li><strong>可靠性差</strong> 错误处理简陋，函数调用失败频繁</li>
+<li><strong>延迟问题</strong> 明显的等待时间，用户体验中断</li>
+<li><strong>成本高昂</strong> 额外的计算成本，API调用费用，资源浪费，需要处理所有可用函数的定义</li>
+<li><strong>能力局限性</strong> 只能做简单操作，缺乏上下文记忆</li>
+</ul>
+<h5 id="1-2-1-Function-Call（函数调用）"><a href="#1-2-1-Function-Call（函数调用）" class="headerlink" title="1.2.1 Function Call（函数调用）"></a>1.2.1 <strong>Function Call（函数调用）</strong></h5><p>是一种让大模型与外部工具、API或代码交互的核心技术，<strong>允许模型在生成文本时，主动触发预定义的函数并返回结构化数据</strong>，从而突破纯文本生成的限制，实现动态能力扩展。<code>Function Call</code>定义工具调用的规范结构，但本身并不会调用函数或工具，是一种工具使用机制。</p>
+<h5 id="1-2-2-都干了什么"><a href="#1-2-2-都干了什么" class="headerlink" title="1.2.2 都干了什么"></a>1.2.2 <strong>都干了什么</strong></h5><ul>
+<li>让LLM知道哪些工具可用</li>
+<li>定义工具数据结构，输入输出，说明工具作用</li>
+<li>模型如何选择工具（自动选择、强行选择）</li>
+</ul>
+<h5 id="1-2-3-核心流程"><a href="#1-2-3-核心流程" class="headerlink" title="1.2.3 核心流程"></a>1.2.3 核心流程</h5><p><strong>模型决策</strong>  </p>
+<ul>
+<li>用户提问 → 大模型分析问题 → <strong>判断是否需要调用外部函数</strong>（查天气）</li>
+</ul>
+<p><strong>生成调用请求</strong>  </p>
+<ul>
+<li>若需要，模型返回一个<strong>结构化请求</strong>（JSON），包含：函数名和所需参数</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">functions = [</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;name&quot;: &quot;get_current_weather&quot;,</span><br><span class="line">        &quot;description&quot;: &quot;获取指定城市的天气&quot;,</span><br><span class="line">        &quot;parameters&quot;: &#123;</span><br><span class="line">            &quot;type&quot;: &quot;object&quot;,</span><br><span class="line">            &quot;properties&quot;: &#123;</span><br><span class="line">                &quot;location&quot;: &#123;&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;城市名称&quot;&#125;,</span><br><span class="line">                &quot;unit&quot;: &#123;&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;celsius&quot;, &quot;fahrenheit&quot;]&#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;required&quot;: [&quot;location&quot;]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>本地执行函数</strong>  </p>
+<ul>
+<li>开发者收到请求后，<strong>在本地或服务器执行对应的函数</strong>（避免模型直接操作外部系统）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if response.choices[0].message.get(&quot;function_call&quot;):</span><br><span class="line">    func_name = response[&quot;function_call&quot;][&quot;name&quot;]</span><br><span class="line">    args = json.loads(response[&quot;function_call&quot;][&quot;arguments&quot;])</span><br><span class="line">    if func_name == &quot;get_current_weather&quot;:</span><br><span class="line">        result = weather_api(args[&quot;location&quot;])  # 调用真实API</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回结果给模型</strong>  </p>
+<ul>
+<li>将函数执行结果（如天气数据、计算结果）重新输入模型 → 模型整合结果生成最终回复。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">final_response = openai.ChatCompletion.create(</span><br><span class="line">    model=&quot;gpt-4&quot;,</span><br><span class="line">    messages=[</span><br><span class="line">        &#123;&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;北京现在多少度？&quot;&#125;,</span><br><span class="line">        &#123;&quot;role&quot;: &quot;function&quot;, &quot;name&quot;: func_name, &quot;content&quot;: str(result)&#125; </span><br><span class="line">    ]</span><br><span class="line">)</span><br><span class="line">print(final_response.choices[0].message.content)</span><br><span class="line"># 输出：&quot;北京当前气温25℃，晴间多云。&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-3-统一标准-MCP诞生"><a href="#1-3-统一标准-MCP诞生" class="headerlink" title="1.3 统一标准 - MCP诞生"></a>1.3 统一标准 - MCP诞生</h4><p>模型上下文 Model Context Protocol (MCP) 由 Claude 背后公司 Anthropic 开发的开放标准。核心目标 “<strong>通过一致方式，让 AI 代理与工具、服务和数据连接</strong>，无论它们位于何处或如何构建”。</p>
+<p><strong>MCP是一个标准协议</strong>，较好的类比是TYPE-C接口，你手机用的TYPE-C接口，那你就可以正常使用相关标准的充电器，无关手机或充电器品牌。</p>
+<p>MCP 直接在 AI 与数据之间架桥联通，通过 MCP 服务器和 MCP 客户端，大家只要都遵循这套协议，就能实现“万物互联”。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/11b8575513014853814e30a6fc41a5a5.webp"></p>
+<h5 id="1-3-1-MCP后台工作原理"><a href="#1-3-1-MCP后台工作原理" class="headerlink" title="1.3.1 MCP后台工作原理"></a>1.3.1 MCP后台工作原理</h5><ul>
+<li>MCP Host（左侧）是AI驱动的应用程序，Claude Desktop、IDE，Agent等工具</li>
+<li>主机连接到多个 MCP 服务器，每个服务器都公开不同的工具或资源</li>
+<li>某些服务器会访问本地资源（计算机上的文件系统或数据库）</li>
+<li>其他的可以访问远程资源（API 或 云服务）</li>
+</ul>
+<h4 id="1-4-MCP-和-Function-Call-对比"><a href="#1-4-MCP-和-Function-Call-对比" class="headerlink" title="1.4 MCP 和 Function Call 对比"></a>1.4 MCP 和 Function Call 对比</h4><ul>
+<li>Function Call 是一种让AI模型能够调用预定义函数或工具的机制</li>
+<li>MCP 是一个开放标准，用于在AI应用程序和外部数据源及工具之间建立安全、标准化的连接</li>
+</ul>
+<h5 id="1-4-1-主要区别"><a href="#1-4-1-主要区别" class="headerlink" title="1.4.1 主要区别"></a>1.4.1 主要区别</h5><p><strong>架构层次</strong></p>
+<ul>
+<li>Function Call：操作级别的工具调用</li>
+<li>MCP：协议级别的系统集成框架</li>
+</ul>
+<p><strong>状态管理</strong></p>
+<ul>
+<li>Function Call：通常无状态，每次调用独立</li>
+<li>MCP：支持有状态的持久连接和上下文管理</li>
+</ul>
+<p><strong>复杂度</strong></p>
+<ul>
+<li>Function Call：相对简单，适合单一任务</li>
+<li>MCP：更复杂，适合企业级集成和复杂工作流</li>
+</ul>
+<p><strong>标准化程度</strong></p>
+<ul>
+<li>Function Call：实现方式相对灵活</li>
+<li>MCP：遵循严格的开放标准和协议规范</li>
+</ul>
+<p><strong>安全性</strong></p>
+<ul>
+<li>Function Call：基本的权限控制</li>
+<li>MCP：更完善的安全框架和权限管理</li>
+</ul>
+<h5 id="1-4-2-应用场景"><a href="#1-4-2-应用场景" class="headerlink" title="1.4.2 应用场景"></a>1.4.2 应用场景</h5><p><strong>Function Call 典型使用场景</strong></p>
+<p>主要集中在简单的工具调用（简单&#x2F;轻量&#x2F;无状态工具使用）</p>
+<ul>
+<li>网络搜索</li>
+<li>数学计算</li>
+<li>天气查询</li>
+<li>数据库查询</li>
+<li>API调用</li>
+</ul>
+<p><strong>MCP 典型使用场景</strong></p>
+<p>主要集中在复杂系统应用（持久化上下文依赖，多步骤工作流，安全性要求严格）</p>
+<ul>
+<li>连接企业数据库和文件系统</li>
+<li>集成复杂的业务系统</li>
+<li>提供持续的数据访问能力</li>
+<li>支持多步骤的复杂任务流程</li>
+</ul>
+<p><strong>二者本身定义并不相同，Function Call更像MCP的一个子集，但也有各自更为契合的应用场景</strong></p>
+<h3 id="二、MCP资源"><a href="#二、MCP资源" class="headerlink" title="二、MCP资源"></a>二、MCP资源</h3><h4 id="2-1-MCP官方"><a href="#2-1-MCP官方" class="headerlink" title="2.1 MCP官方"></a>2.1 MCP官方</h4><p><a target="_blank" rel="noopener" href="https://github.com/modelcontextprotocol/servers">https://github.com/modelcontextprotocol/servers</a></p>
+<p><strong>开发文档</strong></p>
+<p><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/introduction">https://modelcontextprotocol.io/introduction</a></p>
+<h4 id="2-2-Cursor官方"><a href="#2-2-Cursor官方" class="headerlink" title="2.2 Cursor官方"></a>2.2 Cursor官方</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://docs.cursor.com/tools">https://docs.cursor.com/tools</a></li>
+<li><a target="_blank" rel="noopener" href="https://cursor.directory/">https://cursor.directory/</a></li>
+</ul>
+<h4 id="2-3-awesome"><a href="#2-3-awesome" class="headerlink" title="2.3 awesome"></a>2.3 awesome</h4><p><a target="_blank" rel="noopener" href="https://github.com/punkpeye/awesome-mcp-servers">https://github.com/punkpeye/awesome-mcp-servers</a></p>
+<h4 id="2-4-魔塔"><a href="#2-4-魔塔" class="headerlink" title="2.4 魔塔"></a>2.4 魔塔</h4><p><a target="_blank" rel="noopener" href="https://www.modelscope.cn/home">https://www.modelscope.cn/home</a></p>
+<h4 id="2-5-pulemcp"><a href="#2-5-pulemcp" class="headerlink" title="2.5 pulemcp"></a>2.5 pulemcp</h4><p><a target="_blank" rel="noopener" href="https://www.pulsemcp.com/">https://www.pulsemcp.com/</a></p>
+<h4 id="2-6-glama"><a href="#2-6-glama" class="headerlink" title="2.6 glama"></a>2.6 glama</h4><p><a target="_blank" rel="noopener" href="https://glama.ai/mcp/servers">https://glama.ai/mcp/servers</a></p>
+<h4 id="2-7-smithery"><a href="#2-7-smithery" class="headerlink" title="2.7 smithery"></a>2.7 smithery</h4><p><a target="_blank" rel="noopener" href="https://smithery.ai/">https://smithery.ai/</a></p>
+<h4 id="2-8-linuxdo"><a href="#2-8-linuxdo" class="headerlink" title="2.8 linuxdo"></a>2.8 linuxdo</h4><p><a target="_blank" rel="noopener" href="https://linux.do/t/topic/499069">https://linux.do/t/topic/499069</a></p>
+<h4 id="2-9-Awesome-MCP-ZH"><a href="#2-9-Awesome-MCP-ZH" class="headerlink" title="2.9 Awesome-MCP-ZH"></a>2.9 Awesome-MCP-ZH</h4><p><a target="_blank" rel="noopener" href="https://github.com/yzfly/Awesome-MCP-ZH">https://github.com/yzfly/Awesome-MCP-ZH</a></p>
+<h3 id="三、好用的MCP"><a href="#三、好用的MCP" class="headerlink" title="三、好用的MCP"></a>三、好用的MCP</h3><p><strong>使用MCP前，一定先看文档，看清楚文档中MCP的要求（Node版本）和接入方式</strong>，另外MCP现在已经非常多了，我这里仅说一些前端开发或者通用型的MCP。</p>
+<h4 id="3-1-Context7"><a href="#3-1-Context7" class="headerlink" title="3.1 Context7"></a>3.1 Context7</h4><p><a target="_blank" rel="noopener" href="https://github.com/upstash/context7">https://github.com/upstash/context7</a></p>
+<p>这个确实很好的解决了使用三方框架时，API使用不准确的问题。</p>
+<p><strong>作用</strong></p>
+<ul>
+<li>直接从源中提取最新的、特定版本的文档和代码示例 - 并将它们直接放入您的提示中</li>
+<li>举例：我接入Fabric框架时，因为用错版本API导致异常，通过context7进行了纠正</li>
+</ul>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>在Cursor的对话中，通过提示词 “使用context7” 触发context7 MCP调用</li>
+</ul>
+<p><strong>接入配置</strong></p>
+<ul>
+<li><strong>永远要关注node版本</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 安装</span><br><span class="line">npm i -g @upstash/context7-mcp</span><br><span class="line"></span><br><span class="line">// mcp.json配置</span><br><span class="line">&quot;context7&quot;: &#123;</span><br><span class="line">    &quot;command&quot;: &quot;npx&quot;,</span><br><span class="line">    &quot;args&quot;: [</span><br><span class="line">        &quot;-y&quot;,</span><br><span class="line">        &quot;@upstash/context7-mcp&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;env&quot;: &#123;</span><br><span class="line">        &quot;DEFAULT_MINIMUM_TOKENS&quot;: &quot;6000&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="3-2-figma-MCP"><a href="#3-2-figma-MCP" class="headerlink" title="3.2 figma MCP"></a>3.2 figma MCP</h4><p><a target="_blank" rel="noopener" href="https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/">https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/</a></p>
+<p>如果你们团队再用figma的话，那这个算是前端必须的工具，接入figma后可以可以让你少完成30%-50%前端页面布局设计。</p>
+<p><strong>作用</strong></p>
+<ul>
+<li>AI直接基于figma的数据进行页面UI设计，还原质量和UI设计的规范化程度有关系</li>
+</ul>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>设置授权token，让cursor的mcp能请求figma的数据内容，权限就是能给“读写”权限就给，不能就只给“写”。反正是<code>读写 &gt; 写 &gt; 读</code></li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/1.webp"></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/2.webp"></p>
+<ul>
+<li>复制链接，在cursor对话中说明使用figma mcp 实现功能。可以分区域也可以整个页面</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/3.webp"></p>
+<p><strong>接入配置</strong></p>
+<ul>
+<li><strong>永远要关注node版本</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 安装</span><br><span class="line">npm i -g figma-developer-mcp</span><br><span class="line"></span><br><span class="line">// 配置，token换掉</span><br><span class="line">&#123;</span><br><span class="line">    &quot;mcpServers&quot;: &#123;</span><br><span class="line">        &quot;Framelink Figma MCP&quot;: &#123;</span><br><span class="line">            &quot;command&quot;: &quot;npx&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line">                &quot;-y&quot;,</span><br><span class="line">                &quot;figma-developer-mcp&quot;,</span><br><span class="line">                &quot;--figma-api-key=&#123;yourtoken&#125;&quot;,</span><br><span class="line">                &quot;--stdio&quot;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3-git或github"><a href="#3-3-git或github" class="headerlink" title="3.3 git或github"></a>3.3 git或github</h4><p><a target="_blank" rel="noopener" href="https://gitmcp.io/">https://gitmcp.io/</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/github/github-mcp-server">https://github.com/github/github-mcp-server</a></p>
+<p>业务开发，我是不怎么用这两个的，适合经常活跃github的研发。不细说直接参考文档即可。</p>
+<p><strong>git mcp</strong> </p>
+<ul>
+<li>AI 助手可以深入了解代码存储库，读取 llms.txt、llms-full.txt、readme.md 等，响应更加准确减少幻觉</li>
+<li>与任何公共 GitHub 存储库和 GitHub Pages 无缝协作，使 AI 工具能够访问文档和代码</li>
+</ul>
+<p><strong>github mcp</strong></p>
+<ul>
+<li>自动化 GitHub 工作流程和流程</li>
+<li>从 GitHub 存储库中提取和分析数据</li>
+</ul>
+<h4 id="3-4-sequential-thinking"><a href="#3-4-sequential-thinking" class="headerlink" title="3.4 sequential-thinking"></a>3.4 sequential-thinking</h4><p><a target="_blank" rel="noopener" href="https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking">https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking</a></p>
+<p>核心用来做复杂任务设计和拆分，是深度应用多步任务执行必备工具。</p>
+<p><strong>作用</strong></p>
+<ul>
+<li>将复杂问题分解为可管理的步骤</li>
+<li>随着理解的加深而修改和完善思想</li>
+<li>分支到其他推理路径</li>
+<li>动态调整 THOUGHT 总数</li>
+<li>生成并验证解决方案假设</li>
+</ul>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>使用 sequential-thinking 进行3轮思考；</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/4.webp"></p>
+<ul>
+<li>使用sequential-thinking额外的思考步骤</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/5.webp"></p>
+<p><strong>接入配置</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 先安装在使用</span><br><span class="line">npm i -g @modelcontextprotocol/server-sequential-thinking</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 配置</span><br><span class="line">&quot;sequential-thinking&quot;: &#123;</span><br><span class="line">    &quot;command&quot;: &quot;npx&quot;,</span><br><span class="line">    &quot;args&quot;: [</span><br><span class="line">        &quot;-y&quot;,</span><br><span class="line">        &quot;@modelcontextprotocol/server-sequential-thinking&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-5-Playwright"><a href="#3-5-Playwright" class="headerlink" title="3.5 Playwright"></a>3.5 Playwright</h4><p><a target="_blank" rel="noopener" href="https://github.com/microsoft/playwright-mcp">https://github.com/microsoft/playwright-mcp</a></p>
+<p>提供浏览器自动化功能的模型上下文协议 （MCP） 服务器。此服务器使 LLM 能够通过结构化的辅助功能快照与网页进行交互，而无需屏幕截图或视觉调整模型</p>
+<p><strong>作用</strong></p>
+<ul>
+<li><p>抓取浏览器网络信息，分析浏览器中的错误。</p>
+</li>
+<li><p>分析网站性能辅助网站开发</p>
+</li>
+</ul>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>从mcp的设置处，可以看到mcp提供的工具都有哪些，有什么工具就可以用什么能力</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/6.webp"></p>
+<p><strong>接入配置</strong></p>
+<ul>
+<li><p>核心思路就是安装 &#x3D;&gt; 配置，保证路径关系正确即可，比如我用nvm，全局安装在nvm下。</p>
+</li>
+<li><p>如果不全局安装，也可以使用项目级别的node_modules</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// 先安装</span><br><span class="line">npm i -g @playwright</span><br><span class="line"></span><br><span class="line">// 在配置使用</span><br><span class="line">&#123;</span><br><span class="line">  &quot;mcpServers&quot;: &#123;</span><br><span class="line">    &quot;playwright&quot;: &#123;</span><br><span class="line">            &quot;command&quot;: &quot;npx&quot;,</span><br><span class="line">            &quot;args&quot;: [</span><br><span class="line">                &quot;node&quot;,</span><br><span class="line">                &quot;D:/nvm4w/nodejs/node_modules/@playwright/mcp/cli.js&quot;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-6-Chrome-MCP-Server"><a href="#3-6-Chrome-MCP-Server" class="headerlink" title="3.6 Chrome MCP Server"></a>3.6 Chrome MCP Server</h4><p><a target="_blank" rel="noopener" href="https://github.com/hangwin/mcp-chrome">https://github.com/hangwin/mcp-chrome</a></p>
+<p>基于 Chrome 扩展程序的模型上下文协议 (MCP) 服务器，它将您的 Chrome 浏览器功能开放给 Claude 等 AI 助手，从而实现复杂的浏览器自动化、内容分析和语义搜索。</p>
+<p>与传统的浏览器自动化工具（例如 Playwright）不同，Chrome MCP 服务器直接使用您日常使用的 Chrome 浏览器，利用现有的用户习惯、配置和登录状态，让各种大型模型或聊天机器人控制您的浏览器</p>
+<p><strong>作用</strong></p>
+<ul>
+<li><p>分析浏览器网站内容，调用浏览器工具，抓取浏览器数据</p>
+</li>
+<li><p>可以通过mcp来打通本地IDE与浏览器关系，一些浏览器异常可以直接用本地IDE的AI进行分析。</p>
+</li>
+</ul>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>对话中明确要求使用 MCP 工具</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/mcp/7.webp"></p>
+<p><strong>接入配置</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 先安装</span><br><span class="line">npm install -g mcp-chrome-bridge</span><br><span class="line"></span><br><span class="line">// 方案1</span><br><span class="line">&quot;chrome-mcp-stdio&quot;: &#123;</span><br><span class="line">    &quot;command&quot;: &quot;npx&quot;,</span><br><span class="line">    &quot;args&quot;: [</span><br><span class="line">        &quot;node&quot;,</span><br><span class="line">        &quot;D:/nvm4w/nodejs/node_modules/mcp-chrome-bridge/dist/mcp/mcp-server-stdio.js&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方案2</span><br><span class="line">&quot;chrome-mcp-server&quot;: &#123;</span><br><span class="line">    &quot;type&quot;: &quot;streamableHttp&quot;,</span><br><span class="line">    &quot;url&quot;: &quot;http://127.0.0.1:12306/mcp&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-7-browser-tools"><a href="#3-7-browser-tools" class="headerlink" title="3.7 browser-tools"></a>3.7 browser-tools</h4><p><a target="_blank" rel="noopener" href="https://github.com/AgentDeskAI/browser-tools-mcp">https://github.com/AgentDeskAI/browser-tools-mcp</a></p>
+<p>一个强大的浏览器监控和交互工具，它使 AI 驱动的应用程序能够通过 Anthropic 的模型上下文协议 (MCP) 通过 Chrome 扩展程序捕获和分析浏览器数据。<strong>这个偏向监控，但和上面有些类似</strong>，不细说啦。</p>
+<h3 id="四、知识参考"><a href="#四、知识参考" class="headerlink" title="四、知识参考"></a>四、知识参考</h3><p>MCP官方：<a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/introduction">https://modelcontextprotocol.io/introduction</a></p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/@elisowski/mcp-explained-the-new-standard-connecting-ai-to-everything-79c5a1c98288">https://medium.com/@elisowski/mcp-explained-the-new-standard-connecting-ai-to-everything-79c5a1c98288</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.53ai.com/news/LargeLanguageModel/2025042846019.html">https://www.53ai.com/news/LargeLanguageModel/2025042846019.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/27327515233">https://zhuanlan.zhihu.com/p/27327515233</a></p>
+
+<div class="article-footer fs14">
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://justalong.github.io/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://justalong.github.io/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/&title=MCP工具推荐 - 七月 - AI编程与资源分享&summary=本文介绍MCP工具推荐相关内容，包括使用方法、技巧和最佳实践。"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=MCP工具推荐 - 七月 - AI编程与资源分享&amp;body=https://justalong.github.io/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://justalong.github.io/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/07/12/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A1%86%E6%9E%B6/">提示词框架</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="\2025\05\23\AI一键生成视频\" title="AI一键生成视频"><span class="title">AI一键生成视频</span><span class="excerpt">MoneyPrinterTurbo</span></a><a class="item" href="\2025\04\05\去水印网站和软件\" title="免费去水印网站和软件"><span class="title">免费去水印网站和软件</span><span class="excerpt">推荐多款免费去水印网站和软件，包括Lama-Cleaner、Watermark Remover、百度AI图片助手等，支持自动检测水印区域，AI智能去除，适合各种图片格式处理需求</span></a><a class="item" href="\2025\04\13\系统学习AI\" title="全面缓解AI焦虑-系统学习框架"><span class="title">全面缓解AI焦虑-系统学习框架</span><span class="excerpt">全面缓解AI焦虑的系统学习框架，从基础概念到核心技术，从应用领域到伦理影响，帮助普通人系统性地了解人工智能，建立正确的AI认知。</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body giscus'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" src="https://giscus.app/client.js" data-repo="justalong/comments" data-repo-id="R_kgDOOJ1gew" data-category="General" data-category-id="DIC_kwDOOJ1ge84CoITM" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站使用 Stellar 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D-MCP-%E5%8F%91%E5%B1%95"><span class="toc-text">一、简单介绍 MCP 发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E6%97%A9%E6%9C%9F%E9%97%AE%E9%A2%98"><span class="toc-text">1.1 早期问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E5%88%9D%E6%AC%A1%E6%94%B9%E8%BF%9B-Function-Call"><span class="toc-text">1.2 初次改进 - Function Call</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-1-Function-Call%EF%BC%88%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%EF%BC%89"><span class="toc-text">1.2.1 Function Call（函数调用）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-2-%E9%83%BD%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-text">1.2.2 都干了什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-3-%E6%A0%B8%E5%BF%83%E6%B5%81%E7%A8%8B"><span class="toc-text">1.2.3 核心流程</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-%E7%BB%9F%E4%B8%80%E6%A0%87%E5%87%86-MCP%E8%AF%9E%E7%94%9F"><span class="toc-text">1.3 统一标准 - MCP诞生</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-3-1-MCP%E5%90%8E%E5%8F%B0%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">1.3.1 MCP后台工作原理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-MCP-%E5%92%8C-Function-Call-%E5%AF%B9%E6%AF%94"><span class="toc-text">1.4 MCP 和 Function Call 对比</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-1-%E4%B8%BB%E8%A6%81%E5%8C%BA%E5%88%AB"><span class="toc-text">1.4.1 主要区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-2-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">1.4.2 应用场景</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81MCP%E8%B5%84%E6%BA%90"><span class="toc-text">二、MCP资源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-MCP%E5%AE%98%E6%96%B9"><span class="toc-text">2.1 MCP官方</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-Cursor%E5%AE%98%E6%96%B9"><span class="toc-text">2.2 Cursor官方</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-awesome"><span class="toc-text">2.3 awesome</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-%E9%AD%94%E5%A1%94"><span class="toc-text">2.4 魔塔</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-pulemcp"><span class="toc-text">2.5 pulemcp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-glama"><span class="toc-text">2.6 glama</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-7-smithery"><span class="toc-text">2.7 smithery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-8-linuxdo"><span class="toc-text">2.8 linuxdo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-9-Awesome-MCP-ZH"><span class="toc-text">2.9 Awesome-MCP-ZH</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%A5%BD%E7%94%A8%E7%9A%84MCP"><span class="toc-text">三、好用的MCP</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-Context7"><span class="toc-text">3.1 Context7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-figma-MCP"><span class="toc-text">3.2 figma MCP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-git%E6%88%96github"><span class="toc-text">3.3 git或github</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-sequential-thinking"><span class="toc-text">3.4 sequential-thinking</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-Playwright"><span class="toc-text">3.5 Playwright</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-Chrome-MCP-Server"><span class="toc-text">3.6 Chrome MCP Server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-7-browser-tools"><span class="toc-text">3.7 browser-tools</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%9F%A5%E8%AF%86%E5%8F%82%E8%80%83"><span class="toc-text">四、知识参考</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+<div id="global-popup-mask" style="display:none;">
+  <div id="global-popup" role="dialog" aria-modal="true">
+    <div class="popup-header">
+      <strong>内容都优先更新公众号和小程序<br/>该站一周内同步，且只保留实用内容<br/>独有公众号无法发布的内容（资源）<br/><span style="color: red;">如果喜欢，求帮忙分享</span></strong>
+    </div>
+    <div class="popup-qrcodes">
+      <div class="popup-qrcode-item">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/aiqrcode.jpg" alt="AI教程二维码" />
+        <div class="popup-qrcode-desc">AI教程<br/>资讯工具<br/>聚焦AI</div>
+      </div>
+      <div class="popup-qrcode-item">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/qrcode.jpg" alt="开源工具二维码" />
+        <div class="popup-qrcode-desc">开源工具<br/>资源网站<br/>软件工具</div>
+      </div>
+      <div class="popup-qrcode-item">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/xiaochengxu.jpg" alt="小程序二维码" />
+        <div class="popup-qrcode-desc">AI导航<br/>工具导航<br/>实用工具</div>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <button class="popup-close" tabindex="0" aria-label="关闭弹窗">关闭</button>
+    </div>
+  </div>
+</div> </div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js`,
+    marked: `https://cdn.jsdelivr.net/npm/marked@13.0.1/lib/marked.umd.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+
+<!-- required -->
+<script src="/js/main.js?v=1.29.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    }
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #giscus');
+  util.viewportLazyload(el, load_discus, false);
+
+  function load_discus() {
+    if (!el) return;
+    try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      const script = document.createElement('script');
+      script.async = true;
+      for (const key of Object.keys(el.attributes)) {
+        const attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+  }
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
