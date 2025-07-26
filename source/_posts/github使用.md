@@ -8,7 +8,7 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-03-24 07:37:48
-description:
+description: 解决GitHub无法访问的问题，包括Windows和Mac系统的详细操作步骤，通过修改hosts文件和刷新DNS缓存来修复GitHub连接问题
 cover:
 banner:
 sticky:

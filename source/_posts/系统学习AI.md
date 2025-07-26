@@ -1,14 +1,15 @@
 ---
 title: 全面缓解AI焦虑-系统学习框架
-tags: []
-categories: []
+tags: ['AI学习', 'AI焦虑', '人工智能']
+categories: ['AI学习']
+keywords: 'AI学习,AI焦虑,人工智能学习,AI系统学习,AI入门教程,AI基础知识,机器学习,深度学习,AI应用,AI发展'
+description: '全面缓解AI焦虑的系统学习框架，从基础概念到核心技术，从应用领域到伦理影响，帮助普通人系统性地了解人工智能，建立正确的AI认知。'
 poster:
   topic: 标题上方的小字
   headline: 大标题
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-13 21:38:49
-description:
 cover:
 banner:
 sticky:

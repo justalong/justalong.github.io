@@ -8,7 +8,8 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-07-07 22:17:22
-description:
+description: 深度分析主流AI编程工具对Python、JavaScript、Java、Go、Rust等编程语言的支持情况，评估各语言在AI辅助开发中的优劣势，为开发者选择技术栈和人机协同策略提供专业指导
+keywords: AI编程工具, GitHub Copilot, 通义灵码, Cursor, Python编程, JavaScript开发, TypeScript, Java开发, Go语言, Rust编程, C++, 编程语言支持, AI辅助开发, 人机协同编程, 代码生成, 智能补全, 编程效率
 cover:
 banner:
 sticky:

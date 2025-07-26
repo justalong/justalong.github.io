@@ -1,26 +1,50 @@
 ---
-# 基本信息
 title: {{ title }}
 date: {{ date }}
-tags: []
-categories: []
-description: # excerpt 也可 
-# 封面
+categories: 
+  - AI技术
+  - AI工具
+tags: 
+  - AI
+  - 人工智能
+  - AI工具
+  - AI教程
+keywords: AI, 人工智能, AI工具, AI教程, AI应用
+description: 本文介绍{{ title }}相关内容，包括使用方法、技巧和最佳实践。
 cover: 
 banner: 
-poster: # 海报（可选，全图封面卡片）
-  topic: 标题上方的小字 # 可选
-  headline: 大标题 # 必选
-  caption: 标题下方的小字 # 可选
-  color: 标题颜色 # 可选
-# 插件
-sticky: # 数字越大越靠前
-mermaid:
-katex: 
-mathjax: 
-# 可选
-topic: # 专栏 id
-comments: # 设置 false 禁止评论
-indexing: # 设置 false 避免被搜索
-breadcrumb: # 设置 false 隐藏面包屑导航
+sticky: false
+mermaid: false
+katex: false
+mathjax: false
+topic: 
+comments: true
+indexing: true
+breadcrumb: true
 ---
+
+## 引言
+
+在这里介绍文章的主要内容和价值。
+
+## 主要内容
+
+### 1. 基础概念
+
+### 2. 使用方法
+
+### 3. 实际应用
+
+### 4. 最佳实践
+
+## 总结
+
+## 相关资源
+
+- [相关链接1](链接地址)
+- [相关链接2](链接地址)
+
+## 参考资料
+
+1. 参考资料1
+2. 参考资料2

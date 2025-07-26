@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://justalong.github.io/sitemap.xml
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /2025/
+Allow: /categories/
+Allow: /tags/
+Allow: /archives/ 

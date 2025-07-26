@@ -2,13 +2,14 @@
 title: 免费音乐下载网站和APP
 tags: ['免费听音乐', '免费下载音乐']
 categories: ['音乐']
+keywords: '免费音乐下载,免费听音乐,音乐下载网站,免费音乐APP,酷美网盘,熊猫无损音乐,牛五音乐网,音乐下载工具,免费音乐资源'
+description: '推荐多个免费音乐下载网站和APP，包括酷美网盘、熊猫无损音乐、牛五音乐网等，详细介绍各平台特点和使用方法，帮助用户找到免费音乐资源。'
 poster:
   topic: 免费音乐下载，免费听歌APP
   headline: 大标题
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-05 10:44:20
-description:
 cover:
 banner:
 sticky:

@@ -8,7 +8,7 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-08 08:28:58
-description:
+description: 全面梳理AI技术在34个主要行业的实际应用案例，涵盖医疗、制造、金融、教育、交通等领域的AI产品与解决方案，展示AI如何深度改变各行各业的工作方式与效率提升
 cover:
 banner:
 sticky:

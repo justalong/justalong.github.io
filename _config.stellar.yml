@@ -16,7 +16,7 @@ menubar:
       url: https://www.zhihu.com/people/liu-yong-shun-34/posts
     - id: ainav
       theme: '#ccc'
-      title: AI
+      title: AI导航
       url: https://justalong.github.io/2025/06/05/ai%E5%AF%BC%E8%88%AA/
     - id: juejin
       theme: '#ccc'
@@ -43,10 +43,13 @@ article:
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
   auto_banner: false # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 128
+  auto_excerpt: 200
   # 分类颜色
   category_color:
     '探索号': '#f44336'
+    'AI技术': '#2196F3'
+    'AI工具': '#4CAF50'
+    'AI导航': '#FF9800'
   # 文章许可协议
   license: ''
   # 分享

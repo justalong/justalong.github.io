@@ -1,6 +1,6 @@
 ---
 title: 免费下载ppt模板网站
-tags: ['ppt']
+tags: ['ppt', '模板', '下载', '办公软件', '演示文稿']
 categories: ['软件']
 poster:
   topic: 免费ppt模板网站，可以下载你想要的模板
@@ -8,7 +8,8 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-05 10:11:08
-description:
+description: 精选10个免费PPT模板下载网站，包括Office官方、第一PPT、优品PPT等，提供高质量演示文稿模板，无需注册即可下载，适合学生、教师、职场人士使用
+keywords: PPT模板, 免费下载, 演示文稿, 办公软件, 模板网站, 第一PPT, 优品PPT, Office模板, 51PPT, 站长PPT, iSlide, PPT超级市场, 管理资源吧, PPT Fans, 592职业圈, HiPPTer
 cover:
 banner:
 sticky:

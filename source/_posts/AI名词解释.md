@@ -2,13 +2,14 @@
 title: AI名词解释
 tags: ['AI名词']
 categories: ['AI']
+keywords: 'AI名词解释,人工智能术语,AI基础概念,机器学习名词,深度学习术语,NLP名词,计算机视觉术语,AI缩写,AI英文术语,AI技术词汇'
+description: '全面解析AI领域常用名词和术语，包括基础概念、机器学习类型、神经网络类型、自然语言处理、计算机视觉等核心AI技术词汇的中英文对照和详细解释。'
 poster:
   topic: 标题上方的小字
   headline: 大标题
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-07 22:48:48
-description:
 cover:
 banner:
 sticky:

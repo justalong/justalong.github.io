@@ -21,3 +21,5 @@ topic: aicoding
 [AI编程(四)-提示词技巧](https://justalong.github.io/2025/07/09/%E7%BC%96%E7%A8%8B%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8A%80%E5%B7%A7/)
 
 [AI编程(五)-提示词框架](https://justalong.github.io/2025/07/12/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A1%86%E6%9E%B6/)
+
+[AI编程(六)-MCP工具推荐](https://justalong.github.io/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%2F)

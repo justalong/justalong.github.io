@@ -8,7 +8,7 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-07 22:22:06
-description:
+description: 分享使用Claude AI在1天内开发微信小程序工具集的完整经验，包含单位转换、二维码生成、计时器、证件照制作等10+实用工具的开发过程，详细介绍了AI编程的提示词技巧、UI设计规范、数据存储方案，以及从简单需求描述到精确技术约束的演进过程，为AI辅助开发提供实战参考。
 cover:
 banner:
 sticky:

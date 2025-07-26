@@ -8,7 +8,8 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-05-20 21:52:51
-description:
+description: Screenpipe是一款开源的屏幕录制和数据留痕工具，能够24/7自动捕获屏幕内容、音频数据，并通过OCR技术提取文本，建立本地数据库实现完全可搜索的记录。支持Windows、MacOS和Linux，适合开发者、设计师、研究人员等需要回溯工作历史的用户使用。
+keywords: Screenpipe, 数据留痕, 屏幕录制, OCR识别, 本地数据库, 开源工具, 电脑录屏, 工作记录, 文本提取, 跨平台
 cover:
 banner:
 sticky:

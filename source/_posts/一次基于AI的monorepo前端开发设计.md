@@ -2,13 +2,13 @@
 title: 一次基于AI的monorepo前端开发设计
 tags: ['AI前端编程', 'AI编程', 'Cursor前端开发']
 categories: ['AI编程']
+description: '详细记录一次基于AI的monorepo前端开发项目，包括需求分析、架构设计、SDK开发、图片编辑器实现等全流程，展示AI辅助编程的实际应用和效率提升。'
 poster:
   topic: 标题上方的小字
   headline: 大标题
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-07-09 07:55:47
-description:
 cover:
 banner:
 sticky:
@@ -135,13 +135,13 @@ https://linux.do/t/topic/752693
 
 - 拆了四篇文档代表四个大任务，base项目结构基础、core-service 上传和任务、example 示例代码、image-editor图片编辑器
 
-![](https://files.mdnice.com/user/105746/d5d0b9b3-3a60-4ae0-9d3c-8b5f073224ed.png)
+![](https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/san/1.png)
 
 
 - 基于四大模块，我又按照模块进行子任务拆分，此时拆分的任务已经是需求功能描述阶段
 
 
-![](https://files.mdnice.com/user/105746/98a00a1e-9e26-4e54-b065-a206acb02457.png)
+![](https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/san/2.png)
 
 
 
@@ -180,7 +180,7 @@ https://linux.do/t/topic/752693
 
 - 此步骤完成，我们SDK的整体结构基础已经奠定，技术栈和开发阶段的工程搭建全部完毕（vite，vue，ts配置等等）。
 
-![](https://files.mdnice.com/user/105746/f78e8c48-f3c9-4bf9-ad9a-3f9be1038c2d.png)
+![](https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/san/3.png)
 
 
 **此间问题**
@@ -241,7 +241,7 @@ https://linux.do/t/topic/752693
 
 - 我个人设计时，明确要求的双目录结构映射，文档和项目模块，分别咋packages和design两个文件夹保持对称。
 
-![](https://files.mdnice.com/user/105746/485ec163-be33-4dea-9e36-996693f98e01.png)
+![](https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/san/4.png)
 
 
 
@@ -270,7 +270,7 @@ https://linux.do/t/topic/752693
 
 - 一些业务文档，或者UI规范，UI搞尺寸映射到开发rem或vw使用比例情况，需要自己补充说明。
 
-![](https://files.mdnice.com/user/105746/5ac6be0e-f557-428d-80dc-0f62df2b7c8a.png)
+![](https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/san/5.png)
 
 
 #### 4.2 人工审查改动rule

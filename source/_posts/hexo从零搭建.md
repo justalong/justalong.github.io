@@ -8,7 +8,8 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-03-25 23:47:53
-description:
+description: 详细教程：从零开始搭建Hexo静态博客，包含Node.js安装、Git配置、Hexo初始化、本地预览、文章编写、GitHub部署等完整流程，适合新手入门学习
+keywords: hexo搭建, 静态博客, 个人博客, node.js安装, git配置, hexo教程, 博客部署, github pages, markdown写作, 网站建设
 cover:
 banner:
 sticky:

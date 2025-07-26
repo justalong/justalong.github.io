@@ -1,24 +1,28 @@
 ---
 title: AI一键生成视频
-tags: ['AI生成视频', 'AI工具']
-categories: ['AI']
+tags:
+  - AI生成视频
+  - AI工具
+categories:
+  - AI
 poster:
   topic: 标题上方的小字
   headline: 大标题
   caption: 标题下方的小字
   color: 标题颜色
-date: 2025-05-23 20:06:31
-description:
-cover:
-banner:
-sticky:
-mermaid:
-katex:
-mathjax:
-topic:
-comments:
-indexing:
-breadcrumb:
+date: 2025-05-23T20:06:31.000Z
+description: MoneyPrinterTurbo
+cover: null
+banner: null
+sticky: null
+mermaid: null
+katex: null
+mathjax: null
+topic: null
+comments: null
+indexing: null
+breadcrumb: null
+keywords: 'AI一键生成视频,AI生成视频,AI工具,AI'
 ---
 
 ### MoneyPrinterTurbo 简介

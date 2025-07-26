@@ -1,6 +1,8 @@
 ---
 title: 导航专栏
 topic: ainav
+keywords: 导航专栏
+description: AI导航，覆盖市面几乎全部热门AI产品 网站导航，覆盖各类工具，学习，好玩，效率提升等网站导航
 ---
 
 ## AI导航

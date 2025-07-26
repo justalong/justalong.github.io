@@ -2,13 +2,14 @@
 title: Cursor使用技巧，深度使用Cursor
 tags: ['Cursor使用', 'Cursor技巧']
 categories: ['Cursor']
+keywords: 'Cursor使用技巧,Cursor教程,AI编程工具,Cursor深度使用,Cursor快捷键,Cursor聊天功能,Cursor Agent模式,Cursor编程助手,AI开发工具,Cursor配置'
+description: '深入解析Cursor使用技巧，包括基础配置、快捷键操作、聊天对话功能、Agent模式使用等核心内容，帮助开发者掌握Cursor这一强大的AI编程工具，提升编程效率。'
 poster:
   topic: 标题上方的小字
   headline: 大标题
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-07-07 22:16:58
-description:
 cover:
 banner:
 sticky:

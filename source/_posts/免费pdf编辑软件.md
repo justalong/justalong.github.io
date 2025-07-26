@@ -1,6 +1,6 @@
 ---
 title: 免费pdf编辑软件
-tags: ['pdf']
+tags: ['pdf', 'pdf编辑', 'pdf工具', '免费软件']
 categories: ['软件']
 poster:
   topic: pdf编辑/拆分/提取/加密
@@ -8,7 +8,8 @@ poster:
   caption: 标题下方的小字
   color: 标题颜色
 date: 2025-04-05 09:20:41
-description:
+description: 推荐10款免费PDF编辑软件，包括PDF4QT、PDFArranger、PDFCreator、PDF Guru、PDF-XChange Editor、Scribus、Stirling PDF、XpdfReader等，支持PDF合并、拆分、编辑、加密等功能，完全免费使用。
+keywords: PDF编辑软件,免费PDF工具,PDF合并,PDF拆分,PDF加密,PDF转换,PDF编辑器,PDF处理工具,开源PDF软件
 cover:
 banner:
 sticky:
