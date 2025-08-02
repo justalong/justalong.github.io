@@ -1,0 +1,757 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
+  
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <meta name="360-site-verification" content="afda2e6f21db4b5fa092dd0ff9de2478" />
+  <meta name="msvalidate.01" content="88182DA8E9B25502A1DE3B65A5521EC1" />
+  <meta name="google-site-verification" content="dX77Ku8csh3HBP3BqRW-D12OHYjYpdAa7o3uBvs1DcI" />
+  <script>
+    (function(w, d, s, q, i) {
+    w[q] = w[q] || [];
+    var f = d.getElementsByTagName(s)[0],j = d.createElement(s);
+    j.async = true;
+    j.id = 'beacon-aplus';
+    j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
+    f.parentNode.insertBefore(j, f);
+   })(window, document, 'script', 'aplus_queue', '203467608');
+ 
+     //集成应用的appKey
+     aplus_queue.push({
+       action: 'aplus.setMetaInfo',
+       arguments: ['appKey', '67ec8e9665c707471a394fe6']
+     });
+     /************************以下内容为可选配置内容****************************/
+     //sdk提供手动pv发送机制，启用手动pv(即关闭自动pv)，需设置aplus-waiting=MAN;
+     //注意：由于单页面路由改变时不会刷新页面，无法自动发送pv，所以对于单页应用，强烈建议您关闭自动PV, 手动控制PV事件
+    //  aplus_queue.push({
+    //    action: 'aplus.setMetaInfo',
+    //    arguments: ['aplus-waiting', 'MAN']
+    //  });
+     //是否开启调试模式 
+    //  aplus_queue.push({
+    //    action: 'aplus.setMetaInfo',
+    //    arguments: ['DEBUG', true]
+    //  });
+     //是否指定用作计算umid的id类型，默认为cnaid，目前支持:
+     //1. 微信和QQ: openid; 字节和百度 anonymousid; 支付宝 alipay_id
+     //2. 微信、QQ、字节、百度平台的 unionid
+     //3. 业务方自己生成的随机id uuid
+    //   aplus_queue.push({
+    //    action: 'aplus.setMetaInfo',
+    //    arguments: ['aplus-idtype', 'xxxx'] //取值参考见附表1
+    //  });
+    aplus_queue.push({
+    action: 'aplus.sendPV',
+      arguments: [{
+          is_auto: false
+      }, {
+          param2: 'pv'
+      }]
+    });
+     /******************************************************************/
+   </script>
+  
+  <title>从月活和发布时间谈国内IDE - 七月 - AI编程与资源分享</title>
+
+  
+    <meta name="description" content="本文介绍从月活和发布时间谈国内IDE相关内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从月活和发布时间谈国内IDE">
+<meta property="og:url" content="https://justalong.github.io/2025/08/02/%E4%BB%8E%E6%9C%88%E6%B4%BB%E5%92%8C%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4%E8%B0%88%E5%9B%BD%E5%86%85IDE/index.html">
+<meta property="og:site_name" content="七月 - AI编程与资源分享">
+<meta property="og:description" content="本文介绍从月活和发布时间谈国内IDE相关内容">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/1.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/2.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/3.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/4.webp">
+<meta property="og:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/5.webp">
+<meta property="article:published_time" content="2025-08-02T05:40:10.000Z">
+<meta property="article:modified_time" content="2025-08-02T05:45:27.498Z">
+<meta property="article:author" content="七月博客">
+<meta property="article:tag" content="AI工具">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="人工智能">
+<meta property="article:tag" content="AI教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/1.webp">
+  
+  
+  
+  <meta name="keywords" content="AI, 人工智能, AI工具, AI教程, AI应用">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.29.1">
+
+  
+    <link rel="shortcut icon" href="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/favicon.png">
+  
+
+  
+
+  
+</head>
+<body>
+
+<div class="l_body s:aa content story" id="start" layout="post" text-indent><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/favicon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">七月 - AI编程与资源分享</div><div class="sub cap">AI编程, 开源软件推荐, AI技术分享, 网站和资源分享</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item" title="资源" target="_blank" rel="noopener" href="https://github.com/justalong/navjson" style="color:#ccc"><span>资源</span></a><a class="nav-item" title="知乎" target="_blank" rel="noopener" href="https://www.zhihu.com/people/liu-yong-shun-34/posts" style="color:#ccc"><span>知乎</span></a><a class="nav-item" title="AI导航" href="https://justalong.github.io/2025/06/05/ai%E5%AF%BC%E8%88%AA/" style="color:#ccc"><span>AI导航</span></a><a class="nav-item" title="掘金" target="_blank" rel="noopener" href="https://juejin.cn/user/2242659450881991/posts" style="color:#ccc"><span>掘金</span></a><a class="nav-item" title="CSDN" target="_blank" rel="noopener" href="https://blog.csdn.net/liuyongshun2?spm=1011.2648.3001.5343" style="color:#ccc"><span>CSDN</span></a><a class="nav-item" title="github" target="_blank" rel="noopener" href="https://github.com/justalong/navjson" style="color:#ccc"><span>github</span></a></nav>
+</div><div class="nav-qr"><div class="qrcode-item"><img class="qrcode lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/qrcode.jpg" /><div title="智多星手册(软件/网站)" class="qrcode-text">智多星手册(软件/网站)</div></div><div class="qrcode-item"><img class="qrcode lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/xiaochengxu.jpg" /><div title="小程序(导航/工具)" class="qrcode-text">小程序(导航/工具)</div></div><div class="qrcode-item"><img class="qrcode lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/aiqrcode.jpg" /><div title="AI文艺复兴(AI知识)" class="qrcode-text">AI文艺复兴(AI知识)</div></div></div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/08/02/AI%E7%BC%96%E7%A8%8BCLI%E5%B7%A5%E5%85%B7/"><span class="title">Code】</span></a><a class="item title" href="/2025/08/02/%E5%9B%BD%E5%86%85IDE%E5%AF%B9%E6%AF%94Cursor%E5%8A%9F%E8%83%BD%E5%B7%AE%E5%BC%82/"><span class="title">国内IDE对比Cursor功能差异</span></a><a class="item title" href="/2025/08/02/%E4%BB%8E%E6%9C%88%E6%B4%BB%E5%92%8C%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4%E8%B0%88%E5%9B%BD%E5%86%85IDE/"><span class="title">从月活和发布时间谈国内IDE</span></a><a class="item title" href="/2025/08/02/%E8%A7%A3%E5%86%B3cursor%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8claude%E9%97%AE%E9%A2%98/"><span class="title">解决cursor无法使用claude问题</span></a><a class="item title" href="/2025/08/02/cursor%E4%BD%BF%E7%94%A8%E8%A1%A5%E5%85%856%E6%9C%88%E6%9B%B4%E6%96%B0/"><span class="title">cursor使用补充6月更新</span></a><a class="item title" href="/2025/07/31/aicodingcli/"><span class="title">aicodingcli</span></a><a class="item title" href="/2025/07/26/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/"><span class="title">AI编程(七) - 上下文工程</span></a><a class="item title" href="/2025/07/07/aicoding/"><span class="title">AI编程专栏</span></a><a class="item title" href="/2025/07/26/MCP%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"><span class="title">MCP工具推荐</span></a><a class="item title" href="/2025/07/12/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A1%86%E6%9E%B6/"><span class="title">提示词框架</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/AI%E6%8A%80%E6%9C%AF/">AI技术</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/AI%E6%8A%80%E6%9C%AF/AI%E5%B7%A5%E5%85%B7/">AI工具</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-08-02T05:40:10.000Z">2025-08-02</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-08-02T05:45:27.498Z">2025-08-02</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>从月活和发布时间谈国内IDE</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p>为什么最近大厂都在做此类AI编程IDE产品？</p>
+<p>个人认为核心方向有三点，商业化收入、市场占有率（DAU）和效率提升。</p>
+<p>相较于其他处在风口的产品，大多数厂商跟随风口，主要是因为收入和市场占有率。大厂希望成为风口产品的行业TOP同时做好商业化增收或探索第二增长曲线。</p>
+<p>但AI编程相关产品，除了上面基础的两点，还增加了效率提升。AI编程本质上是一场围绕“AI 重构开发流程”的探索，表面是大厂对工具产品的开发，深度来看是大厂对“未来软件生产模式”的战略规划。</p>
+<p>从Cursor表现回看上面理论</p>
+<p>回顾时间线，从去年的下半年到今年的上半年，国内外AI编程相关产品层出不穷，此间最亮眼标杆产品当属Cursor。</p>
+<p>Cursor在短短四个月内收入增长两倍，ARR（年化经常性收入）已超1.5亿美元，这背后足以体现互联网人群的强大付费能力，只要你有好产品那就有人愿意付费，哪怕费用有些高昂。因此相关产品在商业化有非常大的探索空间。</p>
+<p>另外根据Cursor爆火后的用户评价，用户体验，一个Cursor这样的产品，对于互联网开发足以产生本质性的效率变革。从产品，交互，视觉到研发，测试，部署再到数据分析，整个产品交付链路都是有实质性的影响，各个角色效率都有一定的提升，其中受到影响最大，效率提升最明显的则是程序研发。</p>
+<p>正如我前面文章分析提到过，未来将是人机协同的极致效率开发模式，效率的提升也会带来更多的个人品牌。通过人机协同，利用AI使用自然语言进行软件开发，现在有一个新的名称来介绍这种模式 —— 氛围编程 (vibe coding) 。氛围编程也将会是未来主流的软件研发模式。</p>
+<p>营销号会骗人，但是用户量不会骗人，产品不看别人吹，应该关注功能和用户使用量。</p>
+<p>介绍一下国内目前都有哪些产品</p>
+<p>腾讯云AI代码助手（CodeBuddy）</p>
+<p><a target="_blank" rel="noopener" href="https://copilot.tencent.com/">https://copilot.tencent.com/</a></p>
+<p>官方网站访问量（近28天日活用户）</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/1.webp" alt="codebuddy月活"></p>
+<p>2025.7.22发布IDE，且处在邀请码内测阶段，整体IDE起步已经偏晚</p>
+<p>按照官方的情况，应该是有国内版和国际版，国际版可用国外大模型</p>
+<p>定位：企业级全栈开发工具，主打“Craft智能体 + MCP协议”生态。</p>
+<p>核心能力：支持自然语言生成全链路代码，响应延迟仅120ms（业内最低）</p>
+<p>适用场景：大型金融&#x2F;政务项目、微信生态开发</p>
+<p>字节Trae</p>
+<p>国际：<a target="_blank" rel="noopener" href="https://www.trae.ai/">https://www.trae.ai/</a></p>
+<p>国内：<a target="_blank" rel="noopener" href="https://www.trae.cn/">https://www.trae.cn/</a></p>
+<p>官方网站访问量（近28天日活用户）</p>
+<p>国际版<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/2.webp" alt="Trae国际月活"></p>
+<p>国内版<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/3.webp" alt="Trae国内月活"></p>
+<p>2025.3.3国内首个AI的IDE，发布时间也是国内做早的。</p>
+<p>支持国内版本和国际版本，国际版本支持国外大模型。</p>
+<p>定位：国产首款AI原生IDE，支持“Builder模式”任务自动化。</p>
+<p>核心能力：中文优化领先，免费接入DeepSeek R1&#x2F;V3等模型；</p>
+<p>适用场景：中小团队快速原型开发、教育学习</p>
+<p>通义灵码（Lingma IDE）</p>
+<p><a target="_blank" rel="noopener" href="https://lingma.aliyun.com/">https://lingma.aliyun.com/</a></p>
+<p>官方网站访问量（近28天日活用户）</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/4.webp" alt="Lingma IDE月活"></p>
+<p>2025.5.30 首次发布IDE，已经别Trae晚2个多月。</p>
+<p>应该只有国内版本，没找到国际版本</p>
+<p>定位：复杂工程与团队协作工具，基于千问大模型。</p>
+<p>核心能力：中文注释转代码准确率国际领先，集成阿里云API；</p>
+<p>适用场景：中大型企业项目、云服务开发生态</p>
+<p>文心快码（Comate）</p>
+<p><a target="_blank" rel="noopener" href="https://comate.baidu.com/zh/">https://comate.baidu.com/zh/</a></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/ide/5.webp" alt="comate 月活"></p>
+<p>2025.6.23在百度 AI开放日 活动中推出。</p>
+<p>只支持国内版本，没有国际版本</p>
+<p>定位：多模态与文档自动化专家</p>
+<p>核心能力：IDC评测9项维度8项满分，支持设计稿转代码；Zulu智能体实现端到端需求。</p>
+<p>适用场景：前端开发、文档密集型项目</p>
+<p>本期通过基本的时间线和产品初步的月活跃来给大家介绍一下国内AI的IDE产品情况。后面会结合使用对比Cursor来说说差异化内容。我可以先说个结论，整个对比情况就是，国内小学生和国外大学生的对比。</p>
+
+<div class="article-footer fs14">
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://justalong.github.io/2025/08/02/%E4%BB%8E%E6%9C%88%E6%B4%BB%E5%92%8C%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4%E8%B0%88%E5%9B%BD%E5%86%85IDE/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://justalong.github.io/2025/08/02/%E4%BB%8E%E6%9C%88%E6%B4%BB%E5%92%8C%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4%E8%B0%88%E5%9B%BD%E5%86%85IDE/&title=从月活和发布时间谈国内IDE - 七月 - AI编程与资源分享&summary=本文介绍从月活和发布时间谈国内IDE相关内容"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=从月活和发布时间谈国内IDE - 七月 - AI编程与资源分享&amp;body=https://justalong.github.io/2025/08/02/%E4%BB%8E%E6%9C%88%E6%B4%BB%E5%92%8C%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4%E8%B0%88%E5%9B%BD%E5%86%85IDE/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://justalong.github.io/2025/08/02/%E4%BB%8E%E6%9C%88%E6%B4%BB%E5%92%8C%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4%E8%B0%88%E5%9B%BD%E5%86%85IDE/"/>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2025/08/02/%E5%9B%BD%E5%86%85IDE%E5%AF%B9%E6%AF%94Cursor%E5%8A%9F%E8%83%BD%E5%B7%AE%E5%BC%82/">国内IDE对比Cursor功能差异</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/08/02/%E8%A7%A3%E5%86%B3cursor%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8claude%E9%97%AE%E9%A2%98/">解决cursor无法使用claude问题</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="\2025\07\31\aicodingcli\" title="aicodingcli"><span class="title">aicodingcli</span><span class="excerpt">本文介绍aicodingcli相关内容，包括使用方法、技巧和最佳实践。</span></a><a class="item" href="\2025\07\26\MCP工具推荐\" title="MCP工具推荐"><span class="title">MCP工具推荐</span><span class="excerpt">本文介绍MCP工具推荐相关内容，包括使用方法、技巧和最佳实践。</span></a><a class="item" href="\2025\08\02\cursor使用补充6月更新\" title="cursor使用补充6月更新"><span class="title">cursor使用补充6月更新</span><span class="excerpt">本文介绍cursor使用补充6月更新相关内容，包括使用方法、技巧和最佳实践。</span></a><a class="item" href="\2025\07\26\上下文工程\" title="AI编程(七) - 上下文工程"><span class="title">AI编程(七) - 上下文工程</span><span class="excerpt">本文介绍上下文工程相关内容，包括使用方法、技巧和最佳实践。</span></a><a class="item" href="\2025\08\02\AI编程CLI工具\" title="Code】"><span class="title">Code】</span><span class="excerpt">本文介绍AI编程CLI工具相关内容。</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body giscus'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" src="https://giscus.app/client.js" data-repo="justalong/comments" data-repo-id="R_kgDOOJ1gew" data-category="General" data-category-id="DIC_kwDOOJ1ge84CoITM" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站使用 Stellar 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+</aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+<div id="global-popup-mask" style="display:none;">
+  <div id="global-popup" role="dialog" aria-modal="true">
+    <div class="popup-header">
+      <strong>内容都优先更新公众号和小程序<br/>该站一周内同步，且只保留实用内容<br/>独有公众号无法发布的内容（资源）<br/><span style="color: red;">如果喜欢，求帮忙分享</span></strong>
+    </div>
+    <div class="popup-qrcodes">
+      <div class="popup-qrcode-item">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/aiqrcode.jpg" alt="AI教程二维码" />
+        <div class="popup-qrcode-desc">AI教程<br/>资讯工具<br/>聚焦AI</div>
+      </div>
+      <div class="popup-qrcode-item">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/qrcode.jpg" alt="开源工具二维码" />
+        <div class="popup-qrcode-desc">开源工具<br/>资源网站<br/>软件工具</div>
+      </div>
+      <div class="popup-qrcode-item">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/xiaochengxu.jpg" alt="小程序二维码" />
+        <div class="popup-qrcode-desc">AI导航<br/>工具导航<br/>实用工具</div>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <button class="popup-close" tabindex="0" aria-label="关闭弹窗">关闭</button>
+    </div>
+  </div>
+</div> </div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js`,
+    marked: `https://cdn.jsdelivr.net/npm/marked@13.0.1/lib/marked.umd.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+
+<!-- required -->
+<script src="/js/main.js?v=1.29.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    }
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #giscus');
+  util.viewportLazyload(el, load_discus, false);
+
+  function load_discus() {
+    if (!el) return;
+    try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      const script = document.createElement('script');
+      script.async = true;
+      for (const key of Object.keys(el.attributes)) {
+        const attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+  }
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
