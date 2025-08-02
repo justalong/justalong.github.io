@@ -1,0 +1,5 @@
+name: AI编程工具对比 # 在面包屑导航上会显示较短的名字
+title: AI编程工具/IDE/CLI/插件对比和选择
+description: 本专栏，主要对比AI编程工具特点，差异，以及如何选择如何使用
+order_by: -date # 
+icon: https://pub-7fe6bbbffb8045bf9f5bbb3f378ea457.r2.dev/common/0036aceb05cf929ac79ff60c082c9bff.jpeg
