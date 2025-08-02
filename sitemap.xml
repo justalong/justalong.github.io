@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://justalong.github.io/2025/07/31/aicodingcli/</loc>
+    
+    <lastmod>2025-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://justalong.github.io/2025/08/02/AI%E7%BC%96%E7%A8%8BCLI%E5%B7%A5%E5%85%B7/</loc>
     
     <lastmod>2025-08-02</lastmod>
@@ -41,15 +50,6 @@
     <loc>https://justalong.github.io/2025/08/02/cursor%E4%BD%BF%E7%94%A8%E8%A1%A5%E5%85%856%E6%9C%88%E6%9B%B4%E6%96%B0/</loc>
     
     <lastmod>2025-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://justalong.github.io/2025/07/31/aicodingcli/</loc>
-    
-    <lastmod>2025-07-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
